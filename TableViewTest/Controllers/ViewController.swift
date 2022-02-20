@@ -21,6 +21,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         loadData()
     }
+    /*
+     この View Controller が再度表示される時に viewWillAppear() メソッドが呼ばれ、セルの選択が解除 (deselect) されます。
+     */
+    override func viewWillAppear(_ animated: Bool) {
+        if let indexPath = myTableView.indexPathForSelectedRow{
+            myTableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
     
     func loadData() {
        animals.append(Animal(nameJP: "ふくろう", nameEN: "Owl", imageName: "owl"))

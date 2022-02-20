@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--どうぶつ図鑑-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,7 +95,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0dE-pg-QK2" secondAttribute="trailing" id="nYN-P5-6x1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="21G-gA-faL"/>
+                    <navigationItem key="navigationItem" title="どうぶつ図鑑" id="21G-gA-faL">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="cfD-jC-760"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="0dE-pg-QK2" id="Bib-co-ew4"/>
                     </connections>
