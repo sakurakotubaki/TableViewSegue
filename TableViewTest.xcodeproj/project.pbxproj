@@ -15,6 +15,7 @@
 		B3E9819127C2164D00910B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9818F27C2164D00910B80 /* LaunchScreen.storyboard */; };
 		B3E9819927C2189C00910B80 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9819827C2189C00910B80 /* Animal.swift */; };
 		B3E9819B27C2199800910B80 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9819A27C2199800910B80 /* AnimalTableViewCell.swift */; };
+		B3E9819D27C21F3200910B80 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9819C27C21F3200910B80 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B3E9819227C2164D00910B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E9819827C2189C00910B80 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		B3E9819A27C2199800910B80 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		B3E9819C27C21F3200910B80 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				B3E9819227C2164D00910B80 /* Info.plist */,
 				B3E9819827C2189C00910B80 /* Animal.swift */,
 				B3E9819A27C2199800910B80 /* AnimalTableViewCell.swift */,
+				B3E9819C27C21F3200910B80 /* DetailViewController.swift */,
 			);
 			path = TableViewTest;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				B3E9818927C2164A00910B80 /* ViewController.swift in Sources */,
 				B3E9819927C2189C00910B80 /* Animal.swift in Sources */,
 				B3E9818527C2164A00910B80 /* AppDelegate.swift in Sources */,
+				B3E9819D27C21F3200910B80 /* DetailViewController.swift in Sources */,
 				B3E9819B27C2199800910B80 /* AnimalTableViewCell.swift in Sources */,
 				B3E9818727C2164A00910B80 /* SceneDelegate.swift in Sources */,
 			);
