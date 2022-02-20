@@ -80,6 +80,7 @@
                                             <outlet property="animalImageView" destination="Gg3-z3-iTP" id="hGv-D1-b8x"/>
                                             <outlet property="animalNameENLabel" destination="Jjz-bK-FCl" id="9xT-7O-C4t"/>
                                             <outlet property="animalNameJPLabel" destination="bvd-sa-EZI" id="cOo-pU-BZh"/>
+                                            <segue destination="ArS-a6-tkr" kind="show" identifier="showDetailSegue" id="oHC-KZ-0lm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -112,14 +113,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-Uk-602">
-                                <rect key="frame" x="57" y="64" width="300" height="300"/>
+                                <rect key="frame" x="57" y="108" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="d4O-wy-i6v"/>
                                     <constraint firstAttribute="height" constant="300" id="jra-Ff-sL9"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語のなまえ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt3-qg-1ty">
-                                <rect key="frame" x="57" y="394" width="300" height="21"/>
+                                <rect key="frame" x="57" y="438" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="xCp-vG-5bK"/>
                                 </constraints>
@@ -128,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ふくろう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqr-Gk-oEi">
-                                <rect key="frame" x="57" y="443" width="300" height="21"/>
+                                <rect key="frame" x="57" y="487" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="uvw-vT-swk"/>
                                 </constraints>
@@ -137,7 +138,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英語のなまえ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-CR-fzZ">
-                                <rect key="frame" x="57" y="494" width="300" height="21"/>
+                                <rect key="frame" x="57" y="538" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="zIr-Vt-M5t"/>
                                 </constraints>
@@ -146,7 +147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdg-Oy-32e">
-                                <rect key="frame" x="57" y="525" width="300" height="34"/>
+                                <rect key="frame" x="57" y="569" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="RVz-Ph-tMc"/>
                                 </constraints>
@@ -170,6 +171,12 @@
                             <constraint firstItem="oKT-CR-fzZ" firstAttribute="centerX" secondItem="rA2-fM-vzh" secondAttribute="centerX" id="wf4-2K-Gkl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bwj-vN-ZlM"/>
+                    <connections>
+                        <outlet property="animalImageView" destination="w9U-Uk-602" id="zfK-M0-JF3"/>
+                        <outlet property="animalNameENLabel" destination="Pdg-Oy-32e" id="fj0-es-yp6"/>
+                        <outlet property="animalNameJPLabel" destination="vqr-Gk-oEi" id="Gsb-ep-9l8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCK-Dc-bow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

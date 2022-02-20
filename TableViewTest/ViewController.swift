@@ -47,6 +47,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             return cell
     }
+    
+    /*
+     prepare() は Segue が実行される前に呼ばれるメソッドで、ここで次の view controller が表示される前にやりたいことをここで実行することができます。
+     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailSegue" {
+            if let indexPath = myTableView.indexPathForSelectedRow {
+                guard let destination = segue.destination as? DetailViewController else {
+                    fatalError("Failed to prepare DetailViewController.")
+                }
+                
+                destination.animal = animals[indexPath.row]
+            }
+        }
+    }
 
 }
 

@@ -8,22 +8,20 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var animal: Animal!
+    
+    @IBOutlet weak var animalImageView: UIImageView!
+    @IBOutlet weak var animalNameJPLabel: UILabel!
+    @IBOutlet weak var animalNameENLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        animalImageView.image = UIImage(named: animal.imageName)
+        animalNameJPLabel.text = animal.nameJP
+        animalNameENLabel.text = animal.nameEN
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
