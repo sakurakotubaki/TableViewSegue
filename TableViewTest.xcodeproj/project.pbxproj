@@ -13,6 +13,8 @@
 		B3E9818C27C2164A00910B80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9818A27C2164A00910B80 /* Main.storyboard */; };
 		B3E9818E27C2164D00910B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E9818D27C2164D00910B80 /* Assets.xcassets */; };
 		B3E9819127C2164D00910B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E9818F27C2164D00910B80 /* LaunchScreen.storyboard */; };
+		B3E9819927C2189C00910B80 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9819827C2189C00910B80 /* Animal.swift */; };
+		B3E9819B27C2199800910B80 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9819A27C2199800910B80 /* AnimalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B3E9818D27C2164D00910B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E9819027C2164D00910B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E9819227C2164D00910B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E9819827C2189C00910B80 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		B3E9819A27C2199800910B80 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B3E9818D27C2164D00910B80 /* Assets.xcassets */,
 				B3E9818F27C2164D00910B80 /* LaunchScreen.storyboard */,
 				B3E9819227C2164D00910B80 /* Info.plist */,
+				B3E9819827C2189C00910B80 /* Animal.swift */,
+				B3E9819A27C2199800910B80 /* AnimalTableViewCell.swift */,
 			);
 			path = TableViewTest;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E9818927C2164A00910B80 /* ViewController.swift in Sources */,
+				B3E9819927C2189C00910B80 /* Animal.swift in Sources */,
 				B3E9818527C2164A00910B80 /* AppDelegate.swift in Sources */,
+				B3E9819B27C2199800910B80 /* AnimalTableViewCell.swift in Sources */,
 				B3E9818727C2164A00910B80 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
